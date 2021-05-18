@@ -4,7 +4,8 @@ import * as cdk from '@aws-cdk/core';
 import { LambdaWithPytorchContainerStack } from '../lib/lambda-with-pytorch-container-stack';
 
 const app = new cdk.App();
-new LambdaWithPytorchContainerStack(app, 'LambdaWithPytorchContainerStack', {
+const projectName = app.node.tryGetContext('projectName');
+new LambdaWithPytorchContainerStack(app, `${projectName}Stack`, {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */
