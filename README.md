@@ -22,13 +22,13 @@ api gateway - lambda w/containerで構成されている。
 ## develop api
 ### develop in local
 ```bash
-# in /api/lambda
+# in /lambda
 poetry install
 ```
 
 ### run local
 ```bash
-# in /api/lambda
+# in /lambda
 docker-compose up --build
 
 curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{}'
@@ -37,6 +37,6 @@ jsonしかうまく送れないかも
 
 ## deploy api
 ```bash
-# in /api
+# in /
 npx cdk deploy --profile ${aws_profile_name}
 ```
