@@ -16,6 +16,9 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 ## 説明
 api gateway - lambda w/containerで構成されている。
 
+画像とその他のデータを含むmultipart/form-dataのリクエストから
+画像だけ取り出しResNet50で適当に処理して適当に値を返す。
+
 ## develop api
 ### develop in local
 ```bash
