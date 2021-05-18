@@ -1,0 +1,6 @@
+{
+  "python.pythonPath": "lambda/.venv",
+  "python.analysis.extraPaths": [
+    "api/lambda"
+  ]
+}
